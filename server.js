@@ -20,6 +20,7 @@ app.post("/api/v1/createJobs", (req, res) => {
     tags,
     companyName,
     companyEmail,
+    salary,
     id,
   } = req.body;
 
@@ -29,6 +30,7 @@ app.post("/api/v1/createJobs", (req, res) => {
     description: jobDescription,
     appliedBy: [],
     skills: tags,
+    salary: salary,
     companyName: companyName,
     companyEmail: companyEmail,
     employerId: id,
