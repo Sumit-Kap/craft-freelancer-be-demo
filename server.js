@@ -39,7 +39,7 @@ app.post("/api/v1/createJobs", (req, res) => {
     .then((response) => {
       res
         .status(200)
-        .json({ status: "ok", message: "record saved successfully" });
+        .json({ code: "ok", message: "record saved successfully" });
     })
     .catch((err) => {
       console.log(err);
