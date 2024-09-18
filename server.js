@@ -51,7 +51,7 @@ app.get("/api/v1/fetchJobs/:id", async (req, res) => {
   const { id } = req.params;
   console.log("print", req.params);
   try {
-    const response = await Jobs.findOne({ employerId: id });
+    const response = await Jobs.find({ employerId: id });
     res.status(200).json({ status: "ok", data: response });
   } catch (err) {
     console.log(err);
