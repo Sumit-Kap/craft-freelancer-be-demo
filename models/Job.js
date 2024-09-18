@@ -8,7 +8,7 @@ const jobsSchema = mongoose.Schema(
     companyName: { type: String, required: true },
     companyEmail: { type: String, required: true, index: true, unique: true },
     employerId: { type: String, required: true, unique: true },
-    appliedBy: { type: [String], required: true, unique: true },
+    appliedBy: { type: [String] },
     tags: { type: [String], required: true, index: true, unique: true },
   },
   { timestamps: true }
