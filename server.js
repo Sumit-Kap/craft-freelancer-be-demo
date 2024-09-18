@@ -28,7 +28,7 @@ app.post("/api/v1/createJobs", (req, res) => {
     requirements: jobRequirements,
     description: jobDescription,
     appliedBy: [],
-    tags: tags,
+    skills: tags,
     companyName: companyName,
     companyEmail: companyEmail,
     employerId: id,
