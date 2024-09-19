@@ -89,7 +89,7 @@ app.get("/api/v1/fetchUser/:id", async (req, res) => {
   const { id } = req.params;
   console.log("print", req.params);
   try {
-    const response = await Jobs.find({ email: id });
+    const response = await Users.find({ email: id });
     res.status(200).json({ status: "ok", data: response });
   } catch (err) {
     console.log(err);
